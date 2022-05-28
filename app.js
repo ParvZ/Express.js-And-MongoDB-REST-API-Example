@@ -13,7 +13,7 @@ const postRouter = require('./routes/posts');
 app.use('/posts', postRouter);
 
 app.get('/', (req,res)=>{
-    res.send('we at home')
+    res.send('Hello fellas, this is your buddys home.')
 })
  
 mongoose.connect(process.env.DB_CONNECT,{ useNewUrlParser: true }, ()=>{
